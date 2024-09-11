@@ -46,7 +46,7 @@ void Task(void *arg)
 		if (xQueueReceive(queue, &(rxBuffer), (TickType_t) 5))
 		{
 			printf("Button pressed!\n");
-			vTaskDelay(1000 / portTICK_RATE_MS);
+			vTaskDelay(1000 / portTICK_PERIOD_MS);
 		}
 	}
 }
@@ -103,5 +103,4 @@ void app_main(void)
 
 ### 3. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
 
-
-## [>> ต่อไป สัปดาห์หน้า>>](README.md) 
+ 

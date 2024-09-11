@@ -75,11 +75,11 @@ TaskHandle_t MyFirstTaskHandle = NULL;
 
 void My_First_Task(void * arg)
 {
-	uint32_t i = 0;
+	uint16_t i = 0;
 	while(1)
 	{
 		printf("Hello My First Task %d\n",i);
-		vTaskDelay(1000/portTICK_RATE_MS);
+		vTaskDelay(1000/portTICK_PERIOD_MS);
 		i++;
 	}
 }

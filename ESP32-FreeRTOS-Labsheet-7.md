@@ -79,7 +79,7 @@ void Task2(void *arg)
 		if (xQueueReceive(queue, &(rxBuffer), (TickType_t) 5))
 		{
 			printf("Received data from queue == %s\n", rxBuffer);
-			vTaskDelay(1000 / portTICK_RATE_MS);
+			vTaskDelay(1000 / portTICK_PERIOD_MS);
 
 		}
 	}
