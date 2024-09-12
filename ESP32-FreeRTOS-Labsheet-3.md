@@ -63,5 +63,42 @@ void app_main(void)
 ```
 
 4. รันและบันทึกผลจากโปรแกรมข้างบน ได้ผลเหมือนหรือต่างกันอย่างไร
+--------
+### หมายเหตุ API ของ xTaskCreatePinnedToCore
+``` c
+/**
+ * @brief Create a new task that is pinned to a particular core
+ *
+ * This function is similar to xTaskCreate(), but allows the creation of a pinned
+ * task. The task's pinned core is specified by the xCoreID argument. If xCoreID
+ * is set to tskNO_AFFINITY, then the task is unpinned and can run on any core.
+ *
+ * @note If ( configNUMBER_OF_CORES == 1 ), setting xCoreID to tskNO_AFFINITY will be
+ * be treated as 0.
+ *
+ * @param pxTaskCode Pointer to the task entry function.
+ * @param pcName A descriptive name for the task.
+ * @param ulStackDepth The size of the task stack specified as the NUMBER OF
+ * BYTES. Note that this differs from vanilla FreeRTOS.
+ * @param pvParameters Pointer that will be used as the parameter for the task
+ * being created.
+ * @param uxPriority The priority at which the task should run.
+ * @param pxCreatedTask Used to pass back a handle by which the created task can
+ * be referenced.
+ * @param xCoreID The core to which the task is pinned to, or tskNO_AFFINITY if
+ * the task has no core affinity.
+ * @return pdPASS if the task was successfully created and added to a ready
+ * list, otherwise an error code defined in the file projdefs.h
+ */
+    BaseType_t xTaskCreatePinnedToCore( TaskFunction_t pxTaskCode,
+                                        const char * const pcName,
+                                        const uint32_t ulStackDepth,
+                                        void * const pvParameters,
+                                        UBaseType_t uxPriority,
+                                        TaskHandle_t * const pxCreatedTask,
+                                        const BaseType_t xCoreID );
+```
+
+
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-4.md) 
