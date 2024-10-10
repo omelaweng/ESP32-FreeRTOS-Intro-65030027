@@ -96,4 +96,7 @@ void app_main(void)
 
 ```
 
+<img width="1040" alt="ภาพถ่ายหน้าจอ 2567-10-10 เวลา 18 30 22" src="https://github.com/user-attachments/assets/76358068-1b0b-4e75-8fa1-65b6af5df07d">
+
+
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-3.md) 
