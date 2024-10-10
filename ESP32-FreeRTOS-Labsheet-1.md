@@ -19,6 +19,8 @@
 
 
 3. รันโปรแกรมและอธิบายผลที่ได้
+   <img width="1053" alt="ภาพถ่ายหน้าจอ 2567-10-10 เวลา 18 21 26" src="https://github.com/user-attachments/assets/60f91653-51ca-4fd7-90e3-d05ccfc3a01c">
+
 
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-2.md) 
