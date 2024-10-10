@@ -50,8 +50,10 @@ void app_main(void)
 ```
 
 2. รันและบันทึกผลจากโปรแกรมข้างบน
+   <img width="1079" alt="ภาพถ่ายหน้าจอ 2567-10-10 เวลา 18 33 25" src="https://github.com/user-attachments/assets/75216be8-0691-4148-8d79-43ae1a9b7839">
 
-3.  แก้ไข code ในส่วนของการสร้าง task 2 (ตามหมายเหตุหมายเลข 3) เป็นดังนี้
+
+4.  แก้ไข code ในส่วนของการสร้าง task 2 (ตามหมายเหตุหมายเลข 3) เป็นดังนี้
 
 ```c
 void app_main(void)
@@ -63,6 +65,10 @@ void app_main(void)
 ```
 
 4. รันและบันทึกผลจากโปรแกรมข้างบน ได้ผลเหมือนหรือต่างกันอย่างไร
+
+เหมือน
+<img width="1047" alt="ภาพถ่ายหน้าจอ 2567-10-10 เวลา 18 37 06" src="https://github.com/user-attachments/assets/909a294c-b3a6-487a-8631-280b4462fbe7">
+
 --------
 ### หมายเหตุ API ของ xTaskCreatePinnedToCore
 ``` c
