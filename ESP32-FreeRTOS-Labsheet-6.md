@@ -85,5 +85,6 @@ void app_main(void)
 ```
 
 ### 3. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
+<img width="1470" alt="ภาพถ่ายหน้าจอ 2567-10-30 เวลา 21 48 29" src="https://github.com/user-attachments/assets/d9ddcf71-4d8c-4ffb-903f-7ca36eaa30f0">
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-7.md) 
